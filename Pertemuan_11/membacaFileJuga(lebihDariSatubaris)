@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+	string semuaBaris;
+	string satuBaris;
+	
+	myFile.open("data.txt");
+	
+	while (!myFile.eof()){
+		getline(myFile, satuBaris);
+		semuaBaris += satuBaris + "\n";
+		
+	}
+	
+	cout << "\n=== Isi File 'data.txt' lebih dari satu baris ===" << endl;
+	cout << semuaBaris << endl;
+	
+	myFile.close();
+}

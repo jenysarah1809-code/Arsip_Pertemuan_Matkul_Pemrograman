@@ -1,0 +1,27 @@
+void tampilNilai(string nama, double tugas, double uts, double uas){
+	// isi fungsi
+	
+	cout << "Nama Mahasiswa : " << nama << endl;
+	cout << "Nilai Tugas    : " << tugas << endl;
+	cout << "Nilai UTS      : " << uts << endl;
+	cout << "Nilai UAS      : " << uas << endl;
+	cout << "Nilai Akhir    : " << (tugas + uts + uas) / 3 << endl;
+}
+
+int main(){
+	string nama;
+	double tugas, uts, uas;
+	
+	cout << "Masukan Nama : ";
+	getline(cin, nama);
+	cout << "Masukan Nilai Tugas : ";
+	cin >> tugas;
+	cout << "Masukan Nilai UTS : ";
+	cin >> uts;
+	cout << "Masukan Nilai UAS : ";
+	cin >> uas;
+	
+	tampilNilai(nama, tugas, uts, uas);
+	
+	return 0;
+}
